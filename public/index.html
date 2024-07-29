@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Welcome to 3d maps</title>
+
+    <link rel="stylesheet" href="globals.css">
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/10.12.4/firebase-app-compat.js"></script>
@@ -23,7 +25,7 @@
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
+   <!--<style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
       #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
@@ -38,12 +40,682 @@
       }
     </style>
   </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+// v0 by Vercel.
+// https://v0.dev/t/BC0bfVNE6Oy
+-->
+
+<div class="flex flex-col min-h-[100dvh]">
+  <header class="px-4 lg:px-6 h-14 flex items-center">
+    <a class="flex items-center justify-center" href="#">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="h-6 w-6"
+      >
+        <path d="M14 9c0 .6-.4 1-1 1H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9c.6 0 1 .4 1 1Z"></path>
+        <path d="M18 6h4"></path>
+        <path d="M14 4h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3"></path>
+        <path d="m5 10-2 8"></path>
+        <path d="M12 10v3c0 .6-.4 1-1 1H8"></path>
+        <path d="m7 18 2-8"></path>
+        <path d="M5 22c-1.7 0-3-1.3-3-3 0-.6.4-1 1-1h7c.6 0 1 .4 1 1v2c0 .6-.4 1-1 1Z"></path>
+      </svg>
+      <span class="sr-only">3D Mapper</span>
+    </a>
+    <nav class="ml-auto flex gap-4 sm:gap-6">
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        Features
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        Pricing
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        About
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        Contact
+      </a>
+    </nav>
+  </header>
+  <main class="flex-1">
+    <section class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container px-4 md:px-6">
+        <div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+          <div class="flex flex-col justify-center space-y-4">
+            <div class="space-y-2">
+              <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                Convert Drone Footage into 3D Maps
+              </h1>
+              <p class="max-w-[600px] text-muted-foreground md:text-xl">
+                Our advanced AI-powered platform automatically generates high-quality 3D models and terrain maps
+                from your drone video footage.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 min-[400px]:flex-row">
+              <a
+                class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                href="#"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+          <img
+            src="/placeholder.svg"
+            width="550"
+            height="550"
+            alt="Hero"
+            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+      <div class="container px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center">
+          <div class="space-y-2">
+            <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Key Features</div>
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Powerful 3D Mapping Tools</h2>
+            <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Our platform offers a suite of advanced features to help you create stunning 3D maps from your drone
+              footage, including automatic terrain mapping, 3D model generation, and seamless data export options.
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+          <div class="flex flex-col justify-center space-y-4">
+            <ul class="grid gap-6">
+              <li>
+                <div class="grid gap-1">
+                  <h3 class="text-xl font-bold">Automatic Terrain Mapping</h3>
+                  <p class="text-muted-foreground">
+                    Our advanced algorithms automatically generate high-resolution 3D terrain maps from your drone
+                    footage.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="grid gap-1">
+                  <h3 class="text-xl font-bold">3D Model Generation</h3>
+                  <p class="text-muted-foreground">
+                    Create detailed 3D models of your project site, perfect for visualizations and planning.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="grid gap-1">
+                  <h3 class="text-xl font-bold">Data Export Options</h3>
+                  <p class="text-muted-foreground">
+                    Export your 3D maps and models in a variety of formats, including GIS-ready data, for easy
+                    integration with your existing workflows.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="/placeholder.svg"
+            width="550"
+            height="310"
+            alt="Features"
+            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center">
+          <div class="space-y-2">
+            <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Sample Maps</div>
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Stunning 3D Maps</h2>
+            <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Check out some examples of the high-quality 3D maps and models our platform can generate from your
+              drone footage.
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+          <div class="flex flex-col justify-center space-y-4">
+            <div class="aspect-[4/3]">
+              <div
+                class="flex aspect-video justify-center text-xs [&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-none [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-sector]:outline-none [&amp;_.recharts-surface]:outline-none min-h-[300px]"
+                data-chart="chart-r5"
+              >
+                <div class="recharts-responsive-container" style="width: 100%; height: 100%; min-width: 0px;">
+                  <div
+                    class="recharts-wrapper"
+                    style="position: relative; cursor: default; width: 100%; height: 100%; max-height: 413px; max-width: 735px;"
+                  >
+                    <svg
+                      tabindex="0"
+                      role="application"
+                      class="recharts-surface"
+                      width="735"
+                      height="413"
+                      viewBox="0 0 735 413"
+                      style="width: 100%; height: 100%;"
+                    >
+                      <title></title>
+                      <desc></desc>
+                      <defs>
+                        <clipPath id="recharts21-clip">
+                          <rect x="12" y="0" height="383" width="711"></rect>
+                        </clipPath>
+                      </defs>
+                      <g class="recharts-cartesian-grid">
+                        <g class="recharts-cartesian-grid-horizontal">
+                          <line
+                            stroke="#ccc"
+                            fill="none"
+                            x="12"
+                            y="0"
+                            width="711"
+                            height="383"
+                            x1="12"
+                            y1="383"
+                            x2="723"
+                            y2="383"
+                          ></line>
+                          <line
+                            stroke="#ccc"
+                            fill="none"
+                            x="12"
+                            y="0"
+                            width="711"
+                            height="383"
+                            x1="12"
+                            y1="287.25"
+                            x2="723"
+                            y2="287.25"
+                          ></line>
+                          <line
+                            stroke="#ccc"
+                            fill="none"
+                            x="12"
+                            y="0"
+                            width="711"
+                            height="383"
+                            x1="12"
+                            y1="191.5"
+                            x2="723"
+                            y2="191.5"
+                          ></line>
+                          <line
+                            stroke="#ccc"
+                            fill="none"
+                            x="12"
+                            y="0"
+                            width="711"
+                            height="383"
+                            x1="12"
+                            y1="95.75"
+                            x2="723"
+                            y2="95.75"
+                          ></line>
+                          <line
+                            stroke="#ccc"
+                            fill="none"
+                            x="12"
+                            y="0"
+                            width="711"
+                            height="383"
+                            x1="12"
+                            y1="0"
+                            x2="723"
+                            y2="0"
+                          ></line>
+                        </g>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis">
+                        <g class="recharts-cartesian-axis-ticks">
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="12"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="12" dy="0.71em">
+                                Jan
+                              </tspan>
+                            </text>
+                          </g>
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="154.2"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="154.2" dy="0.71em">
+                                Feb
+                              </tspan>
+                            </text>
+                          </g>
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="296.4"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="296.4" dy="0.71em">
+                                Mar
+                              </tspan>
+                            </text>
+                          </g>
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="438.59999999999997"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="438.59999999999997" dy="0.71em">
+                                Apr
+                              </tspan>
+                            </text>
+                          </g>
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="580.8"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="580.8" dy="0.71em">
+                                May
+                              </tspan>
+                            </text>
+                          </g>
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="723"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="723" dy="0.71em">
+                                Jun
+                              </tspan>
+                            </text>
+                          </g>
+                        </g>
+                      </g>
+                      <g class="recharts-layer recharts-area">
+                        <g class="recharts-layer">
+                          <path
+                            fill="var(--color-desktop)"
+                            fill-opacity="0.4"
+                            width="711"
+                            height="383"
+                            stroke="none"
+                            class="recharts-curve recharts-area-area"
+                            d="M12,161.215C59.599,98.715,107.198,36.216,154.797,18.046C202.396,-0.123,249.995,26.038,297.594,99.857C345.193,173.675,392.792,295.151,440.391,297.164C487.99,299.177,535.589,181.727,583.188,133.543C630.787,85.36,678.386,106.444,725.985,127.528L725.985,384.99C678.386,384.99,630.787,384.99,583.188,384.99C535.589,384.99,487.99,384.99,440.391,384.99C392.792,384.99,345.193,384.99,297.594,384.99C249.995,384.99,202.396,384.99,154.797,384.99C107.198,384.99,59.599,384.99,12,384.99Z"
+                          ></path>
+                          <path
+                            fill="none"
+                            fill-opacity="0.4"
+                            stroke="var(--color-desktop)"
+                            width="711"
+                            height="383"
+                            class="recharts-curve recharts-area-curve"
+                            d="M12,161.215C59.599,98.715,107.198,36.216,154.797,18.046C202.396,-0.123,249.995,26.038,297.594,99.857C345.193,173.675,392.792,295.151,440.391,297.164C487.99,299.177,535.589,181.727,583.188,133.543C630.787,85.36,678.386,106.444,725.985,127.528"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                    <div
+                      tabindex="-1"
+                      class="recharts-tooltip-wrapper"
+                      style="visibility: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px;"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center space-y-4">
+            <div class="aspect-[4/3]">
+              <div
+                class="flex aspect-video justify-center text-xs [&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-none [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-sector]:outline-none [&amp;_.recharts-surface]:outline-none min-h-[300px]"
+                data-chart="chart-r6"
+              >
+                <div class="recharts-responsive-container" style="width: 100%; height: 100%; min-width: 0px;">
+                  <div
+                    class="recharts-wrapper"
+                    style="position: relative; cursor: default; width: 100%; height: 100%; max-height: 413px; max-width: 735px;"
+                  >
+                    <svg
+                      tabindex="0"
+                      role="application"
+                      class="recharts-surface"
+                      width="735"
+                      height="413"
+                      viewBox="0 0 735 413"
+                      style="width: 100%; height: 100%;"
+                    >
+                      <title></title>
+                      <desc></desc>
+                      <defs>
+                        <clipPath id="recharts24-clip">
+                          <rect x="12" y="0" height="383" width="711"></rect>
+                        </clipPath>
+                      </defs>
+                      <g class="recharts-cartesian-grid">
+                        <g class="recharts-cartesian-grid-horizontal">
+                          <line
+                            stroke="#ccc"
+                            fill="none"
+                            x="12"
+                            y="0"
+                            width="711"
+                            height="383"
+                            x1="12"
+                            y1="383"
+                            x2="723"
+                            y2="383"
+                          ></line>
+                          <line
+                            stroke="#ccc"
+                            fill="none"
+                            x="12"
+                            y="0"
+                            width="711"
+                            height="383"
+                            x1="12"
+                            y1="287.25"
+                            x2="723"
+                            y2="287.25"
+                          ></line>
+                          <line
+                            stroke="#ccc"
+                            fill="none"
+                            x="12"
+                            y="0"
+                            width="711"
+                            height="383"
+                            x1="12"
+                            y1="191.5"
+                            x2="723"
+                            y2="191.5"
+                          ></line>
+                          <line
+                            stroke="#ccc"
+                            fill="none"
+                            x="12"
+                            y="0"
+                            width="711"
+                            height="383"
+                            x1="12"
+                            y1="95.75"
+                            x2="723"
+                            y2="95.75"
+                          ></line>
+                          <line
+                            stroke="#ccc"
+                            fill="none"
+                            x="12"
+                            y="0"
+                            width="711"
+                            height="383"
+                            x1="12"
+                            y1="0"
+                            x2="723"
+                            y2="0"
+                          ></line>
+                        </g>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis">
+                        <g class="recharts-cartesian-axis-ticks">
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="12"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="12" dy="0.71em">
+                                Jan
+                              </tspan>
+                            </text>
+                          </g>
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="154.2"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="154.2" dy="0.71em">
+                                Feb
+                              </tspan>
+                            </text>
+                          </g>
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="296.4"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="296.4" dy="0.71em">
+                                Mar
+                              </tspan>
+                            </text>
+                          </g>
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="438.59999999999997"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="438.59999999999997" dy="0.71em">
+                                Apr
+                              </tspan>
+                            </text>
+                          </g>
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="580.8"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="580.8" dy="0.71em">
+                                May
+                              </tspan>
+                            </text>
+                          </g>
+                          <g class="recharts-layer recharts-cartesian-axis-tick">
+                            <text
+                              orientation="bottom"
+                              width="711"
+                              height="30"
+                              stroke="none"
+                              x="723"
+                              y="397"
+                              class="recharts-text recharts-cartesian-axis-tick-value"
+                              text-anchor="middle"
+                              fill="#666"
+                            >
+                              <tspan x="723" dy="0.71em">
+                                Jun
+                              </tspan>
+                            </text>
+                          </g>
+                        </g>
+                      </g>
+                      <g class="recharts-layer recharts-area">
+                        <g class="recharts-layer">
+                          <path
+                            fill="var(--color-desktop)"
+                            fill-opacity="0.4"
+                            width="711"
+                            height="383"
+                            stroke="none"
+                            class="recharts-curve recharts-area-area"
+                            d="M12,161.215C59.599,98.715,107.198,36.216,154.797,18.046C202.396,-0.123,249.995,26.038,297.594,99.857C345.193,173.675,392.792,295.151,440.391,297.164C487.99,299.177,535.589,181.727,583.188,133.543C630.787,85.36,678.386,106.444,725.985,127.528L725.985,384.99C678.386,384.99,630.787,384.99,583.188,384.99C535.589,384.99,487.99,384.99,440.391,384.99C392.792,384.99,345.193,384.99,297.594,384.99C249.995,384.99,202.396,384.99,154.797,384.99C107.198,384.99,59.599,384.99,12,384.99Z"
+                          ></path>
+                          <path
+                            fill="none"
+                            fill-opacity="0.4"
+                            stroke="var(--color-desktop)"
+                            width="711"
+                            height="383"
+                            class="recharts-curve recharts-area-curve"
+                            d="M12,161.215C59.599,98.715,107.198,36.216,154.797,18.046C202.396,-0.123,249.995,26.038,297.594,99.857C345.193,173.675,392.792,295.151,440.391,297.164C487.99,299.177,535.589,181.727,583.188,133.543C630.787,85.36,678.386,106.444,725.985,127.528"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                    <div
+                      tabindex="-1"
+                      class="recharts-tooltip-wrapper"
+                      style="visibility: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px;"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+      <div class="container px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center">
+          <div class="space-y-2">
+            <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Testimonials</div>
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">What Our Customers Say</h2>
+            <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Hear from some of our satisfied customers about their experience using our 3D mapping platform.
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6">
+              <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                  <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                    <img class="aspect-square h-full w-full" src="/placeholder-user.jpg" />
+                  </span>
+                  <div>
+                    <h4 class="text-lg font-semibold">John Doe</h4>
+                    <p class="text-muted-foreground">Architect</p>
+                  </div>
+                </div>
+                <p class="text-muted-foreground">
+                  "The 3D mapping tools provided by this platform have been\n a game-changer for our architectural
+                  firm. The level of\n detail and accuracy is unparalleled, and the export\n options make it easy to
+                  integrate the data into our\n existing workflows."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6">
+              <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                  <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                    <img class="aspect-square h-full w-full" src="/placeholder-user.jpg" />
+                  </span>
+                  <div>
+                    <h4 class="text-lg font-semibold">Jane Smith</h4>
+                    <p class="text-muted-foreground">Project Manager</p>
+                  </div>
+                </div>
+                <p class="text-muted-foreground">
+                  "I've been using this 3D mapping platform for our\n construction projects, and it has been an
+                  invaluable\n tool. The automatic terrain mapping and 3D model\n generation features save us so
+                  much time and effort, and\n the results are always top-notch."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+    <p class="text-xs text-muted-foreground">© 2024 3D Mapper. All rights reserved.</p>
+    <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+      <a class="text-xs hover:underline underline-offset-4" href="#">
+        Terms of Service
+      </a>
+      <a class="text-xs hover:underline underline-offset-4" href="#">
+        Privacy
+      </a>
+    </nav>
+  </footer>
+</div>
+</div>
     </div>
     <p id="load">Firebase SDK Loading&hellip;</p>
 
